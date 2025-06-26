@@ -1,4 +1,5 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 const Menu = () => {
     return (
@@ -8,6 +9,7 @@ const Menu = () => {
                 <Navbar.Toggle aria-controls="main-navbar-nav" />
                 <Navbar.Collapse id="main-navbar-nav">
                     <Nav className="me-auto">
+                        <Nav.Link href="/viacep" >ViaCep</Nav.Link>
                         <Nav.Link href="/home" active>Home</Nav.Link>
                         <Nav.Link href="/pokeflex">PokeFlex</Nav.Link>
                         <Nav.Link href="/pokegrid">PokeGrid</Nav.Link>
